@@ -53,13 +53,13 @@ export const Hero = ({ basics }: { basics: any }) => {
               View Experience <ChevronRight size={20} />
             </motion.button>
             
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-full font-medium flex items-center gap-2 transition-all backdrop-blur-sm"
-            >
-              Download Resume <Download size={20} />
-            </motion.button>
+            <a
+  href="/resume.pdf"
+  download
+  className="px-8 py-4 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-full font-medium flex items-center gap-2 transition-all backdrop-blur-sm"
+>
+  Download Resume <Download size={20} />
+</a>
           </div>
         </motion.div>
       </div>
